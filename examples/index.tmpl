@@ -1,0 +1,16 @@
+{
+    body => \'index.tmpl',
+    title => '',
+
+    plugins => [
+        { Sub => 200 },
+        { AutoDump => 300 },
+    ],
+
+    plug_sub => sub {
+        my ( $t, $q ) = @_;
+        $t->{foo} = 'bar';
+        $q->{foo} = 'bar';
+    },
+}
+
