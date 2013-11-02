@@ -1,9 +1,11 @@
 App-ZofCMS-Plugin-AutoDump
 
-The module is a plugin for L<App::ZofCMS> that provides means to quickly use L<Data::Dumper>
-to dump query parameters hashref as well as ZofCMS Template hashref.
+The module is a plugin for L<App::ZofCMS> that provides means to quickly
+use L<Data::Dumper> to dump query parameters hashref as well as ZofCMS
+Template hashref.
 
-This documentation assumes you've read L<App::ZofCMS>, L<App::ZofCMS::Config> and L<App::ZofCMS::Template>
+L<App::ZofCMS::Config> and L<App::ZofCMS::Template>
+This documentation assumes you've read L<App::ZofCMS>,
 
 =head1 HOW TO USE
 
@@ -12,8 +14,9 @@ This documentation assumes you've read L<App::ZofCMS>, L<App::ZofCMS::Config> an
         { AutoDump => 300 },
     ],
 
-This plugin requires no configuration. To run it simply include it in the list of plugins
-to execute with the priority set at the right point of execution line.
+This plugin requires no configuration. To run it simply include it in
+the list of plugins to execute with the priority set at the right
+point of execution line.
 
 =head1 HOW IT WORKS
 

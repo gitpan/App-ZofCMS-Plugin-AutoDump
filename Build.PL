@@ -15,7 +15,9 @@ my $builder = Module::Build->new(
     },
     requires => {
         'Data::Dumper' => 0,
+        perl           => 5.006,
     },
+    configure_requires => { 'Module::Build' => 0 },
     add_to_cleanup      => [ 'App-ZofCMS-Plugin-AutoDump-*' ],
     create_makefile_pl => 'traditional',
 );

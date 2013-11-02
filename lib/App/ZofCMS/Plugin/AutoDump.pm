@@ -3,7 +3,7 @@ package App::ZofCMS::Plugin::AutoDump;
 use warnings;
 use strict;
 
-our $VERSION = '0.0101';
+our $VERSION = '0.0102';
 use Data::Dumper;
 
 sub new { bless {}, shift }
@@ -20,9 +20,12 @@ sub process {
 1;
 __END__
 
+=encoding utf8
+
 =head1 NAME
 
-App::ZofCMS::Plugin::AutoDump - debugging plugin to quickly dump out query parameters and ZofCMS Template hashref
+App::ZofCMS::Plugin::AutoDump - debugging plugin to quickly dump out
+query parameters and ZofCMS Template hashref
 
 =head1 SYNOPSIS
 
